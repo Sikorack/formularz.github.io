@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fryzjer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+        <form action="" method="post">
+            <h1 class="tytul">Fryzjer</h1>
+            <h3 class="podtytul">Podstawowe informacje</h3>
+            
+            
+                <div class="wpisywanieDiv">
+                    <label for="imie">Imię</label><br>            
+                    <input type="text" id="imie" class="inpucik" placeholder="Wpisz Imię">
+                </div>
+                <div class="wpisywanieDiv">
+                    <label for="nazwisko">Nazwisko</label><br>
+                    <input type="text" id="nazwisko" class="inpucik" placeholder="Wpisz Nazwisko">
+                </div>
+            
+    
+            <div class="wpisywanieDiv">
+                <label for="mail">Adres e-mail</label><br>
+                <input type="text" id="mail" class="inpucik" placeholder="Podaj adres e-mail">
+            </div>
+    
+            <div class="wpisywanieDiv">
+                <label for="telefon">Numer telefonu</label><br>
+                <input type="number" id="telefon" class="inpucik" placeholder="Podaj numer telefonu">
+            </div>
+    
+            <h3 class="podtytul">Szczegóły wizyty</h3>
+            
+            
+                <div class="wpisywanieDiv">
+                    <label for="data">Data</label><br>
+                    <input type="date" id="data" class="inpucik">
+                </div>
+                <div class="wpisywanieDiv">
+                    <label for="godzina">Godzina</label><br>
+                    <input type="time" id="godzina" class="inpucik">
+                </div>
+            
+
+            <div class="wybieranie">
+                <div class="fryzjer">
+                    <label for="fryzjer">Fryzjer</label><br>
+                    <select id="fryzjer" class="inpucik">
+                        <option>Barber Jan</option>
+                        <option>Fryzjerka Basia</option>
+                        <option>Fryzjer Maciej</option>
+                        <option>Stylistka Marysia</option>
+                    </select>
+                </div>
+                
+                <div class="usluga">
+                    <label for="usluga">Usługa</label><br>
+                    <select id="usluga" class="inpucik">
+                        <option>Strzyżenie męskie</option>
+                        <option>Strzyżenie dziecięce</option>
+                        <option>Srzyżenie damskie</option>
+                        <option>Modelowanie włosów</option>
+                        <option>Strzyżenie brody</option>
+                        <option>Combo broda + włosy</option>
+                    </select>
+                </div>
+                
+                <div class="komentarze">
+                    <label for="komentarze">Komentarze do wizyty</label><br>
+                    <textarea id="komentarze" class="inpucik komentarz" placeholder="Komentarze do wizyty" maxlength="255"></textarea>
+                </div>
+            </div>
+            <div class="zgoda">
+                <input type="checkbox" id="zgoda" name="zgoda" class="check">
+                <label for="zgoda">Wyrażam zgodę na przetwarzanie moich danych osobowych przez SikoraBarberShop w celu umożliwienia mi skorzystania z usług fryzjerskich oraz prowadzenia niezbędnych działań administracyjnych związanych z moją wizytą.</label>
+            </div>
+            <div class="przyciski">
+                <button type="submit" class="wyslij">Wyślij</button>
+                <button type="reset" class="wyczysc">Wyczyść</button>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
